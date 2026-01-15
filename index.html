@@ -277,7 +277,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- ITEMS DE PORTAFOLIO -->
                     <div onclick="switchPage('project')" class="portfolio-item motion corp block group relative overflow-hidden aspect-video bg-[#111]">
                         <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition duration-700">
                         <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6">
@@ -368,6 +367,8 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- LA SECCIÓN "PIEZAS DEL PROYECTO" HA SIDO ELIMINADA DEFINITIVAMENTE -->
 
                 <div class="mt-32 flex justify-end">
                     <button onclick="switchPage('project')" class="group text-right">
@@ -571,7 +572,6 @@
         function navigateToWork() {
             const home = document.getElementById('page-home');
             const workSection = document.getElementById('work');
-            
             if (home.classList.contains('active-page')) {
                 workSection.scrollIntoView({ behavior: 'smooth' });
             } else {
